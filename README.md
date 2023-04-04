@@ -186,5 +186,5 @@ Feel free to use it as you see fit!
 
 Contributions to the **EVM Calendar** contract are welcome. If you have any bug reports, feature requests, or other contributions, please open an issue or pull request on this repository.
 
-### Acknoledgements
+### Acknowledgements
 @ionikdev wrote the first draft of this documentation.
