@@ -25,7 +25,7 @@ The **EVM Calendar** smart contract provides functionality to convert a UNIX tim
         view
         returns (string memory)
 ```
-**Description**: The function calculates the time remaining until a given timestamp, in the format "DD days, HH hours, MM minutes, SS seconds".
+**Description**: The countdown function takes a Unix timestamp as input, and returns a string in the format X days, HH:MM:SS representing the time remaining until the input timestamp is reached, starting from the current time obtained using `block.timestamp`.
 
 **Input**: A uint256 UNIX timestamp value.
 
@@ -136,5 +136,8 @@ contract EVMCalendarImplementation {
 Implementation
 ![image](https://user-images.githubusercontent.com/85406816/228246314-0d8064c4-d433-4dc4-96b6-1c65ff430241.png)
 
+
+##Contributions
+Contributions to the **EVM Calendar** contract are welcome. If you have any bug reports, feature requests, or other contributions, please open an issue or pull request on this repository.
 
 
