@@ -69,7 +69,7 @@ The **EVM Calendar** smart contract provides functionality to convert a UNIX tim
 ## Usage
 To use the **EVM Calendar** contract, you can import it into your Solidity project by inheriting the ```interface```. You can then call the public functions on the contract to convert timestamps to date components or date strings.
 
-Proposed real life use cases of the **EVM Calendar** can be found [**HERE**]()
+Proposed real life use cases of the **EVM Calendar** can be found [**HERE**](https://github.com/EVMlord/EVMCalendar/blob/main/README.md#real-life-use-cases)
 
 Here is an example usage of the EVMCalendar contract:
 ```solidity
