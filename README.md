@@ -10,11 +10,21 @@ solidity
 ```solidity
 function convertTimestampToDateString(uint256 timestamp) public pure returns (string memory)
 ```
-Description: This function converts a given UNIX timestamp into a human-readable date string in the format "DD-MMM-YYYY HH:mm:ss".
+**Description**: This function converts a given UNIX timestamp into a human-readable date string in the format "DD-MMM-YYYY HH:mm:ss".
 
-Input: A uint256 UNIX timestamp value.
+**Input**: A uint256 UNIX timestamp value.
 
-Output: A string representing the date in the format "DD-MMM-YYYY HH:mm:ss".
+**Output**: A string representing the date in the format "DD-MMM-YYYY HH:mm:ss".
+
+
+
+## Usage
+To use the **EVM Calendar** contract, you can import it into your Solidity project by inheriting the ```interface```. You can then call the public functions on the contract to convert timestamps to date components or date strings.
+
+Here is an example usage of the UnixCalendar contract:
+
+https://github.com/EVMlord/EVMCalendar/blob/47d92bb51c1a1c44b673561339cd62537bbb0be6/implementation/EVMCalendarImplementation.sol
+
 
 
 Implementation
