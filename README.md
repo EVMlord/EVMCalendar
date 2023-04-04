@@ -167,15 +167,15 @@ Feel free to use it as you see fit!
 {
   "timestampConverters": [
     {
-      "address": "0x1234567890123456789012345678901234567890",
+      "address": "coming soon",
       "network": "ETH Mainnet"
     },
     {
-      "address": "0x0987654321098765432109876543210987654321",
+      "address": "coming soon",
       "network": "ropsten"
     },
     {
-      "address": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "address": "coming soon",
       "network": "rinkeby"
     }
   ]
