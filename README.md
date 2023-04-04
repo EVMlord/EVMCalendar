@@ -69,7 +69,9 @@ The **EVM Calendar** smart contract provides functionality to convert a UNIX tim
 ## Usage
 To use the **EVM Calendar** contract, you can import it into your Solidity project by inheriting the ```interface```. You can then call the public functions on the contract to convert timestamps to date components or date strings.
 
-Here is an example usage of the UnixCalendar contract:
+Proposed real life use cases of the **EVM Calendar** can be found [**HERE**]()
+
+Here is an example usage of the EVMCalendar contract:
 ```solidity
 // SPDX-License-Identifier: MIT
 // All times are in UTC
@@ -147,7 +149,11 @@ Now you can reference any of the calendar functions in your smart contract.
 ```
 Implementation
 ![image](https://user-images.githubusercontent.com/85406816/228246314-0d8064c4-d433-4dc4-96b6-1c65ff430241.png)
+
 Feel free to use it as you see fit!
+
+## Real life use cases
+* **Timestamp verification**: The *EVM Calendar* can be used to verify the timestamp of a particular event or transaction by comparing it with the current date and time in UTC. This can be useful in applications like supply chain management, where tracking and verifying the time of events (e.g., product shipment, delivery) is crucial.
 
 ## Contributions
 
