@@ -6,15 +6,63 @@ The **EVM Calendar** smart contract provides functionality to convert a UNIX tim
 
 ## Functions
 ### convertTimestamp
-solidity
 ```solidity
-function convertTimestampToDateString(uint256 timestamp) public pure returns (string memory)
+    function convertTimestamp(uint256 timestamp) 
+        public 
+        pure 
+        returns (string memory)
 ```
-**Description**: This function converts a given UNIX timestamp into a human-readable date string in the format "DD-MMM-YYYY HH:mm:ss".
+**Description**: This function converts a given UNIX timestamp into a human-readable date string in the format "DD-MM-YYYY HH:mm:ss".
 
 **Input**: A uint256 UNIX timestamp value.
 
-**Output**: A string representing the date in the format "DD-MMM-YYYY HH:mm:ss".
+**Output**: A string representing the date in the format "DD-MM-YYYY HH:mm:ss".
+
+### countdown
+```solidity
+    function countdown(uint256 endTimestamp)
+        external
+        view
+        returns (string memory)
+```
+**Description**: The function calculates the time remaining until a given timestamp, in the format "DD days, HH hours, MM minutes, SS seconds".
+
+**Input**: A uint256 UNIX timestamp value.
+
+**Output**: A string representing the time remaining in the format "DD-HH-MM-SS".
+
+### checkTimeUTC
+```solidity
+    function checkTimeUTC() 
+        external 
+        view 
+        returns (string memory)
+```
+**Description**: This function converts a the current time into a human-readable time string.
+
+**Output**: A string representing the current time in the format "HH:mm:ss".
+
+### checkDateUTC
+```solidity
+    function checkDateUTC() 
+        external 
+        view 
+        returns (string memory)
+```
+**Description**: This function converts a the current timestamp into a human-readable date string.
+
+**Output**: A string representing the current date in the format "HH:mm:ss".
+
+### getCurrentDateAndTimeUTC
+```solidity
+    function getCurrentDateAndTimeUTC() 
+        external 
+        view 
+        returns (string memory);
+```
+**Description**: The getCurrentDateAndTimeUTC function converts the current UTC date and time in the format "YYYY-MM-DD HH:MM:SS". 
+
+**Output**: A string representing the current date and time in the format "YYYY-MM-DD HH:MM:SS".
 
 
 
