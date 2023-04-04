@@ -51,7 +51,7 @@ The **EVM Calendar** smart contract provides functionality to convert a UNIX tim
 ```
 **Description**: This function converts a the current timestamp into a human-readable date string.
 
-**Output**: A string representing the current date in the format "HH:mm:ss".
+**Output**: A string representing the current date in the format "DD-MM-YYYY".
 
 ### getCurrentDateAndTimeUTC
 ```solidity
