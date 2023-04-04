@@ -1,6 +1,6 @@
 # EVMCalendar
 
-The *EVM Calendar* smart contract provides functionality to convert a UNIX timestamp into a human-readable date string in the format "DD-MMM-YYYY HH:mm:ss".
+The **EVM Calendar** smart contract provides functionality to convert a UNIX timestamp into a human-readable date string in the format "DD-MM-YYYY HH:MM:SS".
 
 ![image](https://user-images.githubusercontent.com/85406816/228015169-194365d5-f744-4b12-b195-051d1fa2a6c3.png)
 
