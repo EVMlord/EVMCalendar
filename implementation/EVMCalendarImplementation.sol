@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// @author EVMlord => https://lord.dev
+// @author EVMlord => https://EVMlord.dev
 // All times are in UTC
 
 pragma solidity ^0.8.19;
