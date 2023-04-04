@@ -22,10 +22,68 @@ function convertTimestampToDateString(uint256 timestamp) public pure returns (st
 To use the **EVM Calendar** contract, you can import it into your Solidity project by inheriting the ```interface```. You can then call the public functions on the contract to convert timestamps to date components or date strings.
 
 Here is an example usage of the UnixCalendar contract:
+```solidity
+// SPDX-License-Identifier: MIT
+// All times are in UTC
 
-![url](https://github.com/EVMlord/EVMCalendar/blob/47d92bb51c1a1c44b673561339cd62537bbb0be6/implementation/EVMCalendarImplementation.sol)
+pragma solidity ^0.8.19;
 
+interface IEVMCalendar {
+    // @dev Converts timestamp to date string in YYYY-MM-DD HH:MM:SS format
+    function convertTimestamp(uint256 unixTimestamp)
+        external
+        pure
+        returns (string memory);
 
+    function countdown(uint256 endTimestamp)
+        external
+        view
+        returns (string memory);
+
+    // @dev Returns current time in HH:MM:SS format
+    function checkTimeUTC() external view returns (string memory);
+
+    function checkDateUTC() external view returns (string memory);
+
+    function getCurrentDateAndTimeUTC() external view returns (string memory);
+}
+
+contract EVMCalendarImplementation {
+    IEVMCalendar EVMSQL;
+
+    constructor(IEVMCalendar _EVMSQL) {
+        EVMSQL = _EVMSQL;
+    }
+
+    function convertTimestamp(uint256 unixTimestamp)
+        external
+        view
+        returns (string memory)
+    {
+        return EVMSQL.convertTimestamp(unixTimestamp);
+    }
+
+    function countdown(uint256 endTimestamp)
+        external
+        view
+        returns (string memory)
+    {
+        return EVMSQL.countdown(endTimestamp);
+    }
+
+    function checkTimeUTC() external view returns (string memory) {
+        return EVMSQL.checkTimeUTC();
+    }
+
+    function checkDateUTC() external view returns (string memory) {
+        return EVMSQL.checkDateUTC();
+    }
+
+    function getCurrentDateAndTimeUTC() external view returns (string memory) {
+        return EVMSQL.getCurrentDateAndTimeUTC();
+    }
+}
+```
 
 Implementation
 ![image](https://user-images.githubusercontent.com/85406816/228246314-0d8064c4-d433-4dc4-96b6-1c65ff430241.png)
