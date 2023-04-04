@@ -145,10 +145,9 @@ Now you can reference any of the calendar functions in your smart contract.
     }
 }
 ```
-
 Implementation
 ![image](https://user-images.githubusercontent.com/85406816/228246314-0d8064c4-d433-4dc4-96b6-1c65ff430241.png)
-
+Feel free to use it as you see fit!
 
 ##Contributions
 
