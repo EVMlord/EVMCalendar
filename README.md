@@ -163,7 +163,24 @@ Implementation
 Feel free to use it as you see fit!
 
 ## EVM Calendar Implementation Contracts
-
+```json
+{
+  "timestampConverters": [
+    {
+      "address": "0x1234567890123456789012345678901234567890",
+      "network": "ETH Mainnet"
+    },
+    {
+      "address": "0x0987654321098765432109876543210987654321",
+      "network": "ropsten"
+    },
+    {
+      "address": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "network": "rinkeby"
+    }
+  ]
+}
+```
 
 ## Contributions
 
