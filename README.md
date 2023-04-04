@@ -95,14 +95,27 @@ interface IEVMCalendar {
 
     function getCurrentDateAndTimeUTC() external view returns (string memory);
 }
-
-contract EVMCalendarImplementation {
+```
+Then you specify the contract address of the **EVM Clendar** implementation deployed on the evm you are working with.
+```solidity
+contract MySmartContract {
     IEVMCalendar EVMSQL;
 
     constructor(IEVMCalendar _EVMSQL) {
         EVMSQL = _EVMSQL;
     }
+ }
+```
+It can also be declared as a constant like in the example below.
+```solidity
+contract MySmartContract {
+    IEVMCalendar constant EVMSQL = IEVMCalendar(0xCalendarAddress);
 
+    constructor() {}
+ }
+```
+Now you can reference any of the calendar functions in your smart contract.
+```solidity
     function convertTimestamp(uint256 unixTimestamp)
         external
         view
