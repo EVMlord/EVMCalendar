@@ -166,18 +166,26 @@ Feel free to use it as you see fit!
 ## EVM Calendar Implementation Contracts
 ```json
 {
-  "timestampConverters": [
+  "EVMCalendars": [
     {
-      "address": "coming soon",
-      "network": "ETH Mainnet"
+      "address": "0xB3a412605838A783C72148B0BB9b33C1DB7f2749",
+      "network": "BNB Smart Chain Testnet"
     },
     {
-      "address": "coming soon",
-      "network": "ropsten"
+      "address": "0x21eD826DDa652ab16fE08F4DC17A178031754D2E",
+      "network": "BNB Smart Chain Mainnet"
     },
     {
-      "address": "coming soon",
-      "network": "rinkeby"
+      "address": "0x68B5E924DDDdA92dEA7F38f8dCB3386d4854c18F",
+      "network": "Arbitrum One"
+    },
+    {
+      "address": "0xe7C2c8ab7766e46406A9c3a2c9119a8A7cBa75ae",
+      "network": "Polygon Mainnet"
+    },
+    {
+      "address": "0x8a81348e22B60f79610f2fa6308F61e6c4d10EA0",
+      "network": "Metis Andromeda Mainnet"
     }
   ]
 }
