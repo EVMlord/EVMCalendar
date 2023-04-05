@@ -193,7 +193,7 @@ Feel free to use it as you see fit!
 
 ## Contributions
 
-Contributions to the **EVM Calendar** contract are welcome. If you have any bug reports, feature requests, or other contributions, please open an issue or pull request on this repository.
+Contributions to the **EVM Calendar** contract are welcome. If you have any bug reports, feature requests, or other contributions, please open an issue or pull request on this repository. Send me your implementations on twitter [@EVMlord](https://twitter.com/EVMlord), I look forward to adding a featured implementations section where I'll reference noteworthy use cases.
 
 ### Acknowledgements
 @ionikdev wrote the first draft of this documentation.
